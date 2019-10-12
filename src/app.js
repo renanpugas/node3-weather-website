@@ -8,6 +8,9 @@ const forecast = require("./utils/forecast");
 // __filename = caminho completo do arquivo, com o nome do arquivo
 
 const app = express();
+//pego porta passada pelo Heroku
+//se não houver valor usa porta 3000
+const port = process.env.PORT || 3000;
 
 //Define paths for Express config
 const publicDirectoryPath = path.join(__dirname, "../public");
@@ -124,6 +127,6 @@ app.get("/*", (req, res)=>{
     });
 });
 
-app.listen(3000, ()=>{
-    console.log("Server is up on port 3000.");
+app.listen(port, ()=>{
+    console.log(`Server is up on port ${port}.`);
 });

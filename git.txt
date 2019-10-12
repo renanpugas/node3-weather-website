@@ -6,7 +6,8 @@ git-scm.com
 2 - add arquivos (add command) leva da fila de untracked para staged changes (arquivos com alterações)
 ex: - $git add src/ = adiciona todos arquivos na pasta src
     - $git add . = adiciona todos arquivos
-3 - criar commit dos arquivos "commitar" (subir arquivos para o git) ($git commit -m "initial commit")
+3 - criar commit dos arquivos "commitar" ($git commit -m "initial commit")
+4 - subir arquivos para o git (git remote add origin git@github.com:renanpugas/node3-weather-website.git)
 
 untracked files = arquivos ainda não "commitados", novos no projeto
 arquivo já "commitado" que sofrer alterações vai para unstaged changes
@@ -20,3 +21,16 @@ arquivo já "commitado" que sofrer alterações vai para unstaged changes
 //comandos
 $git init = inicializa projeto
 $git status = mostra commits e untracked files
+$git commit =m "first commit" = faz commit
+$git remote add origin git@github.com:renanpugas/node3-weather-website.git = intregra com o github
+$git push -u origin master = joga codigo no git
+
+
+//cmd comandos
+$ls = lista arquivos do diretorio
+$ls -a = mostra também arquivos ocultos do diretorio
+$ls -a -l = mostra arquivos em lista
+$ls -a -l ~/.ssh = procura em diretorio especifico
+
+$ssh-keygen -t rsa -b 4096 -C "renanpugas@gmail.com"
+//id_rsa.pub = compartilho com github e heroku
