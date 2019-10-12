@@ -1,0 +1,21 @@
+//documentação
+git-scm.com
+
+//passos
+1 - iniciar git no diretorio (git init)
+2 - add arquivos (add command) leva da fila de untracked para staged changes (arquivos com alterações)
+ex: - $git add src/ = adiciona todos arquivos na pasta src
+    - $git add . = adiciona todos arquivos
+3 - "commitar" (subir arquivos para o git) (commit command)
+
+untracked files = arquivos ainda não "commitados", novos no projeto
+arquivo já "commitado" que sofrer alterações vai para unstaged changes
+
+//arquivos em verde no VSCode = ainda não commitados
+
+//.gitignore = arquivos qe não quero commitar
+//ex: node_modules/
+
+//comandos
+$git init = inicializa projeto
+$git status = mostra commits e untracked files
