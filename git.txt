@@ -6,14 +6,15 @@ git-scm.com
 2 - add arquivos (add command) leva da fila de untracked para staged changes (arquivos com alterações)
 ex: - $git add src/ = adiciona todos arquivos na pasta src
     - $git add . = adiciona todos arquivos
-3 - "commitar" (subir arquivos para o git) (commit command)
+3 - criar commit dos arquivos "commitar" (subir arquivos para o git) ($git commit -m "initial commit")
 
 untracked files = arquivos ainda não "commitados", novos no projeto
 arquivo já "commitado" que sofrer alterações vai para unstaged changes
 
 //arquivos em verde no VSCode = ainda não commitados
+//arquivos em laranja = mudanças em arquivos já rastreados (tracking)
 
-//.gitignore = arquivos qe não quero commitar
+//.gitignore = arquivos que não quero commitar
 //ex: node_modules/
 
 //comandos
