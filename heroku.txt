@@ -1,1 +1,3 @@
 $ heroku create notes-app
+//fazer commit antes disso
+$ git push heroku master
